@@ -2,12 +2,18 @@
 // 5 -> 2, 4
 // 8 -> 2, 4, 6, 8
 
-
 Console.Write("Введите целое число: ");
 int a = Convert.ToInt32(Console.ReadLine());
-int n = Convert.ToInt32(Console.ReadLine());
-for (n=0; n<=a; n++)
-if (n%2==0)
+int count = 2;
+while (count <= a)
 {
-    Console.Write("{0} == i");
+    if(count % 2 == 0)
+    {
+        Console.Write($"{count} ");
+        count++;
+    }
+    else
+    {
+        count++;
+    }
 }
